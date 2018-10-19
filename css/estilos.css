@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.limpiar{
+    clear: both;
+}
+
+body{
+    background: #eee;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    margin: 15px;
+    text-align: center;
+}
+
+.titulo{
+    font-family: serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(70, 90, 99);
+}
+
+.logo{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.logo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: solid 3px rgb(86, 200, 99);
+    margin: 0 auto;
+}
+
+/******** MENU PRINCIPAL ********/
+.menu-principal{
+    background: #ccc;
+    text-align: center;
+    margin: 20px auto;
+    border: solid 1px rgb(70, 90, 99);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.menu-principal li{
+    display: inline-block;
+    margin: 5px 1px;
+    padding: 8px 5px;
+    width: 100px;
+    background: transparent;
+    border-radius: 8px;
+    font-family: "sans-serif";
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.menu-principal a{
+    color: rgb(70, 90, 99);
+}
+
+.menu-principal li:hover{
+    background: rgb(188, 232, 42);
+}
+/**************/
+
+.banner{
+    /*
+    width: 700px;
+    height: 300px;
+    border: 3px solid #ccc;
+    margin: auto;
+    
+    background-image: url(/image/paisaje.jpg);
+    background-size: 100% 100%;
+    
+    animation: banner 12s infinite;*/
+    clear: both;
+    width: 90%;
+    max-height: 640px;
+	max-width: 700px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+.tarjeta {
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1000;
+}
+/* Slider Banner*/
+.slider-banner {
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+
+.slider-banner .banner{
+	position: relative;
+	width: 100%;
+}
+
+.slider-banner .banner img{
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	left: 100%;
+}
+
+.slider-banner .flecha-banner{
+	font-size: 35px;
+	line-height: 35px;
+	color: rgba(0,0,0,.4);
+	position: absolute;
+	top: 50%;
+	z-index: 1100;
+}
+
+.slider-banner .flecha-banner:hover {
+	color: rgba(0,0,0,.7);
+}
+
+.slider-banner .anterior{
+	left: 20px;
+}
+
+.slider-banner .siguiente{
+	right: 20px;
+}
+
+
+/*Slider Info*/
+.slider-info{
+	text-align: center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+}
+
+.slider-info .informacion{
+	width: 100%;
+	text-align: center;
+}
+
+.slider-info .informacion{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider-info .informacion article {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.slider-info .informacion article .slide{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	position: absolute;
+	padding: 20px 0px;
+}
+.slider-info .informacion article .slide .s1{
+	background: #fff;
+	width: 40%;
+	border-radius: 5%;
+}
+
+/* Slider Flechas */
+
+.slider-info .flecha-info {
+	font-size: 35px;
+	line-height: 35px;
+	color: #d9d9d9;
+	position: absolute;
+	top: 50%;
+	z-index: 1100;
+}
+
+.slider-info .flecha-info:hover {
+	color: #6ed279;
+}
+
+.slider-info .anterior {
+	left: 20px;
+}
+
+.slider-info .siguiente {
+	right: 20px;
+}
+
+.slider-info .informacion .nombre{
+	color: #444;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+
+.slider-info .informacion .trabajo{
+	color: #55acee;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+
+.slider-info .informacion .pais{
+	color: #444;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+
+.slider-info .informacion .pais img{
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+
+.slider-info .informacion .subtitulo{
+	color: #444;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+.slider-info .informacion .texto{
+	color: #55acee;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/* Botones Slider Info */
+.slider_info .informacion .botones {
+	width: 100%;
+}
+
+.slider-info .informacion .botones span{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background: #e6e6e6;
+}
+.slider-info .informacion .botones .active{
+	background: #6ed279;	
+}
+
+/* ----- ----- Redes Sociales ----- ----- */
+.redes-sociales{
+	padding: 20px 0;
+	text-align: center;
+}
+
+.redes-sociales a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	padding: 14px;
+	color: #fff;
+	background: #000;
+	border-radius: 50%;
+	margin: 0 10px;
+	text-align: center;
+}
+
+.redes-sociales .behance {
+	background: #1769ff;
+}
+
+
+.redes-sociales .facebook {
+	background: #3b5998;
+}
+
+.redes-sociales .twitter {
+	background: #55acee;
+}
+/*
+@keyframes banner{
+    0%, 30%{
+        background-image: url(/image/paisaje.jpg);
+    }
+    31%, 34%{
+        opacity: 0.5;
+    }
+    35%, 65%{
+        background-image: url(/image/playa.jpg);
+    }
+    66%, 69%{
+        opacity: 0.5;
+    }
+    70%, 100%{
+        background-image: url(/image/programmer.jpg);
+    }
+}*/
+/**************/
+
+#contenedor-carrito{
+    margin: 20PX auto;
+	clear: both;
+	width: 300px;
+	float: right;
+	border-radius:5px;
+	padding:15px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.2) inset;
+	background: rgb(200,200,200);
+}
+
+#contenedor-carrito table tr td{
+	text-align: right;
+	padding: 4px;
+}
+#contenedor-carrito table{
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+#contenedor-carrito table tr:last-child{
+	background: white;
+}
+
+#carrito{
+	background: white;
+}
+
+.boton-carrito{
+	width: 120px;
+	height: 30px;
+	margin: 10px 10px;
+}
+.vaciar{
+	float: left;
+}
+.pedir{
+	float: right;
+}
+
+
+/*******************/
+.main{
+    text-align: center;
+    margin: 30px;
+}
+
+.main img{
+    width: 500px;
+}
+.carta{
+  margin: 15px 0;  
+}
+
+#elemento{
+    background: rgb(.5 247, 234, 182) ;
+    float:left;
+    margin: 10px;
+    color: #e6ac0d;
+    padding: 8px 3px;
+    border: solid 2px #e6ac0d;
+    border-radius: 10px;
+    width: 100%;
+}
+
+h3{
+    color:black;
+}
+
+h4{
+	color:black;
+	font-style: italic;
+}
+
+#elemento img{
+    width: 150px;
+    height: 110px;
+    margin: 5px;
+    float: left;
+}
+
+#elemento button{
+
+    padding: 4px 8px;
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+#elemento button.comprar{
+    float: left;
+    background: #09ad15;
+    margin-left: 3px;
+}
+
+#elemento button.detalles{
+    float: right;
+    width: 100%;
+    background-color: green;
+    margin-right: 3px;
+}
+
+#elemento button.comprar:hover{
+    background: rgba(9, 173, 21, 0.8);
+}
+
+#elemento button.detalles:hover{
+    background: rgba(41, 52, 186, 0.8);
+}
+/**************/
+
+/**************/
+footer{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background: #e6ac0d 5%; 
+}
